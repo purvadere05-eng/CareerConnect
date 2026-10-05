@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- MySQL Driver -->
+        <property name="hibernate.connection.driver_class">
+            com.mysql.cj.jdbc.Driver
+        </property>
+
+        <!-- Database URL -->
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost:3306/careerconnect_db
+        </property>
+
+        <!-- Database Username -->
+        <property name="hibernate.connection.username">
+            root
+        </property>
+
+        <!-- Database Password -->
+        <property name="hibernate.connection.password">
+            YOUR_MYSQL_PASSWORD
+        </property>
+
+        <!-- Hibernate Dialect -->
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.MySQLDialect
+        </property>
+
+        <!-- Automatically update tables -->
+        <property name="hibernate.hbm2ddl.auto">
+            update
+        </property>
+
+        <!-- Show SQL queries in console -->
+        <property name="hibernate.show_sql">
+            true
+        </property>
+
+        <!-- Entity Mapping Classes -->
+        <!-- We will add these after creating entities -->
+         <mapping class="com.careerconnect.entity.User"/>
+         <mapping class="com.careerconnect.entity.Student"/>
+         <mapping class="com.careerconnect.entity.Job"/>
+         <mapping class="com.careerconnect.entity.Application"/>
+    </session-factory>
+
+</hibernate-configuration>

@@ -1,0 +1,820 @@
+/* =====================================================
+   CAREERCONNECT - COMMON STYLES
+===================================================== */
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+h1 {
+    text-align: center;
+    margin: 30px 0 10px;
+    color: #1f3c88;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+h3 {
+    color: #1f3c88;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+    text-decoration: none;
+    color: #1f5fbf;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    background-color: #1f5fbf;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #164a96;
+}
+
+
+/* =========================
+   FORMS
+========================= */
+
+form {
+    width: 90%;
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #1f5fbf;
+}
+
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background-color: #1f3c88;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    color: #dce7ff;
+    text-decoration: none;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+}
+
+
+.dashboard-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.2s;
+}
+
+
+.dashboard-card:hover {
+    transform: translateY(-4px);
+}
+
+
+.dashboard-card h3 {
+    margin-bottom: 12px;
+}
+
+
+.dashboard-card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   JOB CARDS
+========================= */
+
+.jobs-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+.job-card {
+    background-color: white;
+    padding: 22px;
+    margin-bottom: 18px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.job-card h3 {
+    margin-bottom: 12px;
+}
+
+
+.job-card p {
+    margin: 7px 0;
+    color: #555;
+}
+
+
+/* =========================
+   APPLICATION CARDS
+========================= */
+
+#applicationsContainer {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+.application-card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.application-card h3 {
+    margin-bottom: 15px;
+}
+
+
+.application-card p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+
+.application-card hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 18px 0;
+}
+
+
+/* =========================
+   STATUS DROPDOWN
+========================= */
+
+.application-card select {
+    width: auto;
+    min-width: 150px;
+    padding: 8px 12px;
+    margin-left: 5px;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+table {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+
+    border-collapse: collapse;
+
+    background-color: white;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+
+th {
+    background-color: #1f3c88;
+    color: white;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f8f9fc;
+}
+
+
+/* =========================
+   SEARCH SECTION
+========================= */
+
+.search-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 25px auto;
+
+    display: flex;
+    gap: 10px;
+}
+
+
+.search-container input,
+.search-container select {
+    flex: 1;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+#message {
+    width: 90%;
+    max-width: 900px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.success {
+    color: #198754;
+}
+
+
+.error {
+    color: #dc3545;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile-container {
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+
+    background-color: white;
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.profile-container p {
+    margin: 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: #1f3c88;
+    color: white;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+
+    .search-container {
+        flex-direction: column;
+    }
+
+
+    form {
+        width: 95%;
+    }
+
+
+    .dashboard-container {
+        width: 95%;
+    }
+
+
+    .jobs-container {
+        width: 95%;
+    }
+
+
+    #applicationsContainer {
+        width: 95%;
+    }
+
+
+    table {
+        width: 95%;
+        font-size: 13px;
+    }
+
+
+    th,
+    td {
+        padding: 8px;
+    }
+    
+    /* =========================
+   REGISTRATION PAGE
+========================= */
+
+form + p {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto 40px;
+    text-align: center;
+}
+
+form + p a {
+    color: #1f5fbf;
+    font-weight: bold;
+}
+
+/* =========================
+   PROFILE PAGE
+========================= */
+
+.profile-card {
+    border: none;
+    border-radius: 15px;
+}
+
+
+.profile-information {
+    width: 100%;
+}
+
+
+.profile-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 5px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    gap: 20px;
+}
+
+
+.profile-row strong {
+    color: #1f3c88;
+    min-width: 150px;
+}
+
+
+.profile-row span {
+    color: #555;
+    text-align: right;
+    word-break: break-word;
+}
+
+
+#profilePhoto {
+    background-color: #f1f3f5;
+}
+
+
+@media (max-width: 576px) {
+
+    .profile-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+
+    .profile-row span {
+        text-align: left;
+    }
+
+}
+
+/* =========================
+   STUDENT JOBS PAGE
+========================= */
+
+#jobsContainer {
+    width: 100%;
+}
+
+
+.job-card {
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.2s,
+                box-shadow 0.2s;
+}
+
+
+.job-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+.job-card h3 {
+    color: #1f3c88;
+    margin-bottom: 15px;
+}
+
+
+.job-card p {
+    margin: 8px 0;
+    color: #555;
+}
+
+
+.job-card button {
+    margin-top: 12px;
+}
+
+
+/* Search card */
+
+#keyword,
+#location {
+    height: 45px;
+}
+
+
+#searchButton,
+#clearButton {
+    height: 45px;
+}
+
+/* =========================
+   JOB DETAILS PAGE
+========================= */
+
+.job-details-card {
+    max-width: 750px;
+    border: none;
+    border-radius: 15px;
+}
+
+
+.job-details-card h3 {
+    color: #1f3c88;
+    margin-bottom: 25px;
+}
+
+
+.job-details-card p {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #555;
+}
+
+
+.job-details-card strong {
+    color: #222;
+}
+
+
+.job-details-card .job-description {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 18px;
+    margin-top: 20px;
+}
+
+
+/* =========================================
+   LOGIN PAGE
+========================================= */
+
+body {
+    background-color: #f5f7fb;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+
+/* CareerConnect heading */
+
+h1 {
+    color: #21468b;
+}
+
+
+/* Login heading */
+
+h2 {
+    color: #333;
+}
+
+
+/* Login card */
+
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+
+/* Input fields */
+
+.form-control {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+
+/* Login button */
+
+.btn-primary {
+    background-color: #2563c7;
+    border: none;
+    padding: 11px;
+    border-radius: 8px;
+}
+
+
+.btn-primary:hover {
+    background-color: #1d4fa3;
+}
+
+
+/* Register link */
+
+a {
+    color: #2563c7;
+}
+
+/* =========================================
+   GLOBAL
+========================================= */
+
+body {
+    background-color: #f5f7fb;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================================
+   HEADINGS
+========================================= */
+
+h1 {
+    color: #21468b;
+}
+
+h2 {
+    color: #333;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+
+/* Registration card */
+
+.registration-card {
+    max-width: 600px;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-control {
+    padding: 11px 13px;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: #2563c7;
+    box-shadow: 0 0 0 0.2rem rgba(37, 99, 199, 0.15);
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.btn-primary {
+    background-color: #2563c7;
+    border: none;
+    padding: 11px;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background-color: #1d4fa3;
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+a {
+    color: #2563c7;
+}
+
+
+/* ================================
+   REGISTRATION PAGE
+================================ */
+
+.register-card {
+    max-width: 600px;
+    border: none;
+    border-radius: 12px;
+}
+
+/* Registration inputs */
+.register-card .form-control {
+    height: 48px;
+    border-radius: 8px;
+}
+
+/* Input focus */
+.register-card .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* Register button */
+.register-card .btn-primary {
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* Login link */
+a {
+    color: #0d6efd;
+}
+
+}

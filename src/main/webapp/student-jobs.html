@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CareerConnect - Jobs</title>
+
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Main Container -->
+
+    <div class="container py-5">
+
+
+        <!-- Heading -->
+
+        <div class="text-center mb-4">
+
+            <h1 class="fw-bold">
+                CareerConnect
+            </h1>
+
+            <h2 class="mt-3">
+                Available Jobs
+            </h2>
+
+            <p class="text-muted">
+                Find your next career opportunity
+            </p>
+
+        </div>
+
+
+        <!-- Search Section -->
+
+        <div class="card shadow-sm mb-4">
+
+            <div class="card-body p-4">
+
+
+                <div class="row g-3">
+
+
+                    <!-- Keyword -->
+
+                    <div class="col-md-5">
+
+                        <label
+                            for="keyword"
+                            class="form-label fw-semibold">
+
+                            Job Title / Skills
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="keyword"
+                            class="form-control"
+                            placeholder="Search by title or skills">
+
+                    </div>
+
+
+                    <!-- Location -->
+
+                    <div class="col-md-4">
+
+                        <label
+                            for="location"
+                            class="form-label fw-semibold">
+
+                            Location
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            class="form-control"
+                            placeholder="Enter location">
+
+                    </div>
+
+
+                    <!-- Buttons -->
+
+                    <div class="col-md-3 d-flex align-items-end gap-2">
+
+                        <button
+                            id="searchButton"
+                            type="button"
+                            class="btn btn-primary w-100">
+
+                            🔍 Search
+
+                        </button>
+
+
+                        <button
+                            id="clearButton"
+                            type="button"
+                            class="btn btn-outline-secondary w-100">
+
+                            Clear
+
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Jobs Heading -->
+
+        <div class="d-flex justify-content-between
+                    align-items-center mb-3">
+
+            <h3 class="mb-0">
+                Job Opportunities
+            </h3>
+
+        </div>
+
+
+        <!-- Jobs -->
+
+        <div id="jobsContainer">
+
+            <div class="text-center text-muted py-5">
+
+                Loading jobs...
+
+            </div>
+
+        </div>
+
+
+        <!-- Back -->
+
+        <div class="text-center mt-4">
+
+            <a href="student-dashboard.html"
+               class="text-decoration-none">
+
+                ← Back to Dashboard
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- Existing JavaScript -->
+
+    <script src="js/student-jobs.js"></script>
+
+
+</body>
+
+</html>

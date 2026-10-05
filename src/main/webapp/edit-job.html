@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CareerConnect - Edit Job</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <h1>CareerConnect</h1>
+
+    <h2>Admin - Edit Job</h2>
+
+    <div class="job-form">
+
+        <form id="editJobForm">
+
+            <input type="hidden" id="jobId">
+
+            <label>Job Title</label>
+
+            <input type="text"
+                   id="title"
+                   required>
+
+            <br><br>
+
+
+            <label>Company</label>
+
+            <input type="text"
+                   id="company"
+                   required>
+
+            <br><br>
+
+
+            <label>Location</label>
+
+            <input type="text"
+                   id="location"
+                   required>
+
+            <br><br>
+
+
+            <label>Salary</label>
+
+            <input type="text"
+                   id="salary"
+                   required>
+
+            <br><br>
+
+
+            <label>Skills</label>
+
+            <input type="text"
+                   id="skills"
+                   required>
+
+            <br><br>
+
+
+            <label>Job Type</label>
+
+            <select id="jobType">
+
+                <option value="Full Time">
+                    Full Time
+                </option>
+
+                <option value="Part Time">
+                    Part Time
+                </option>
+
+                <option value="Internship">
+                    Internship
+                </option>
+
+            </select>
+
+            <br><br>
+
+
+            <label>Description</label>
+
+            <br>
+
+            <textarea id="description"
+                      rows="6"
+                      cols="40"
+                      required></textarea>
+
+            <br><br>
+
+
+            <button type="submit">
+                Update Job
+            </button>
+
+            <button type="button"
+                    onclick="goBack()">
+
+                Cancel
+
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <script src="js/edit-job.js"></script>
+
+</body>
+
+</html>

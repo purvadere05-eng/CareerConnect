@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CareerConnect - Manage Jobs</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <h1>CareerConnect</h1>
+
+    <h2>Admin - Manage Jobs</h2>
+
+    <button type="button" onclick="showAddForm()">
+    + Add New Job
+</button>
+
+    <hr>
+
+    <div id="jobFormContainer"
+         style="display:none;">
+
+        <h3 id="formTitle">
+            Add New Job
+        </h3>
+
+        <form id="jobForm">
+
+            <input type="hidden"
+                   id="jobId">
+
+
+            <label>Job Title</label>
+
+            <input type="text"
+                   id="title"
+                   required>
+
+            <br><br>
+
+
+            <label>Company</label>
+
+            <input type="text"
+                   id="company"
+                   required>
+
+            <br><br>
+
+
+            <label>Location</label>
+
+            <input type="text"
+                   id="location"
+                   required>
+
+            <br><br>
+
+
+            <label>Salary</label>
+
+            <input type="text"
+                   id="salary"
+                   placeholder="4-6 LPA"
+                   required>
+
+            <br><br>
+
+
+            <label>Skills</label>
+
+            <input type="text"
+                   id="skills"
+                   placeholder="Java, Hibernate, MySQL"
+                   required>
+
+            <br><br>
+
+
+            <label>Job Type</label>
+
+            <select id="jobType">
+
+                <option value="Full Time">
+                    Full Time
+                </option>
+
+                <option value="Part Time">
+                    Part Time
+                </option>
+
+                <option value="Internship">
+                    Internship
+                </option>
+
+            </select>
+
+            <br><br>
+
+
+            <label>Description</label>
+
+            <br>
+
+            <textarea id="description"
+                      rows="5"
+                      cols="40"
+                      required>
+            </textarea>
+
+            <br><br>
+
+
+            <button type="submit">
+                Save Job
+            </button>
+
+            <button type="button"
+                    onclick="cancelForm()">
+                Cancel
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <hr>
+
+
+    <h3>All Jobs</h3>
+
+    <div id="jobsContainer">
+
+        Loading jobs...
+
+    </div>
+
+
+    <script src="js/admin-jobs.js"></script>
+
+</body>
+
+</html>
